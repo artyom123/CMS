@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './icons/icons';
+
+import HomePage from './page/HomePage';
+import LoginPage from './page/LoginPage';
+import NotFoundPage from './page/NotFoundPage';
+import ClientsPage from './page/ClientsPage';
+import EmployeesPage from './page/EmployeesPage';
+import SalaryPage from './page/SalaryPage';
+import SchedulePage from './page/SchedulePage';
+import StatisticsPage from './page/StatisticsPage';
+import TimePage from './page/TimePage';
+import SettingUserPage from './page/SettingUserPage';
+
+const App = () => (
+  <>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/clients" component={ClientsPage} />
+        <Route exact path="/employees" component={EmployeesPage} />
+        <Route exact path="/salary" component={SalaryPage} />
+        <Route exact path="/schedule" component={SchedulePage} />
+        <Route exact path="/statistics" component={StatisticsPage} />
+        <Route exact path="/time" component={TimePage} />
+        <Route exact path="/setting-user" component={SettingUserPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </BrowserRouter>
+  </>
+);
+
+App.displayName = 'App';
 
 export default App;

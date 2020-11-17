@@ -1,0 +1,23 @@
+@import '../../styles/constants.module.scss';
+
+.drawer {
+  width: $drawerWidth;
+  // flex-shrink: 0;
+  // white-space: 'nowrap';
+  transition: transform ease $timeAnimation !important;
+  will-change: transform;
+
+  &-open {
+    transform: translateX(0%);
+  }
+
+  &-close {
+    transform: translateX(-100%);
+  }
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

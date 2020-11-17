@@ -1,0 +1,16 @@
+// Colors
+
+$primaryWhite: #ffffff;
+$primaryBlack: #1c1c1c;
+$primaryBlue: #00b6e4;
+
+$drawerWidth: 240px;
+
+$timeAnimation: .5s;
+
+:export {
+    primaryWhite: $primaryWhite;
+    primaryBlack: $primaryBlack;
+    primaryBlue: $primaryBlue;
+    drawerWidth: $drawerWidth;
+} 

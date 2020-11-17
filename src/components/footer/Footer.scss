@@ -1,0 +1,16 @@
+@import '../../styles/constants.module.scss';
+
+.footer {
+  background-color: $primaryBlack;
+  color: $primaryWhite;
+
+  & a {
+    color: $primaryWhite;
+  }
+
+  &-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
