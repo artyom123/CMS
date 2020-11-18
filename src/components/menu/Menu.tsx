@@ -17,7 +17,7 @@ import { ChevronLeft } from '@material-ui/icons';
 import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import MENU from '../../data/menu';
+import { MENU } from '../../data/menu';
 
 import './Menu.scss';
 

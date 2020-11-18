@@ -7,10 +7,9 @@ import Employees from '../components/employees/Employees';
 
 import EMPLOYEES from '../data/employees';
 
-import { Employee } from '../type/employees';
-
 const EmployeesPage = () => {
   const [employees, setEmployees] = useState<any>([]);
+
   useEffect(() => {
     setEmployees(EMPLOYEES);
   }, []);
@@ -19,7 +18,6 @@ const EmployeesPage = () => {
     <>
       <Header />
       <Menu />
-      <h1 style={{paddingTop: "60px"}}>EmployeesPage</h1>
       { employees && <Employees employees={employees}/> }
       <Footer />
     </>

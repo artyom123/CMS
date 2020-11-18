@@ -1,0 +1,59 @@
+@import '../../styles/constants.module.scss';
+
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 74px 20px 10px;
+
+  &-card {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: none !important;
+
+    &-active {
+      position: absolute;
+      top: 8px;
+      color: $primaryWhite;
+      padding: 2px 10px;
+
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 0 solid transparent;
+        border-left: 15px solid;
+        border-bottom: 24px solid transparent;
+        position: absolute;
+        top: 0;
+        right: -15px;
+      }
+
+      &-enable {
+        background: green;
+
+        &:before {
+          border-left-color: green;
+        }
+      }
+
+      &-disable {
+        background: red;
+
+        &:before {
+          border-left-color: red;
+        }
+      }
+    }
+
+    &-link {
+      position: relative;
+    }
+
+    &-media {
+      height: 0;
+      padding-top: 100%;
+    }
+  }
+}

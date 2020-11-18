@@ -47,5 +47,20 @@ const MENU = [
   },
 ];
 
-// eslint-disable-next-line import/no-default-export
-export default MENU;
+const MENU_USER = [
+  {
+    id: 1,
+    link: '/setting-user',
+    title: "Настройки",
+  },
+  {
+    id: 2,
+    link: '/login',
+    title: "Выход",  
+  },
+];
+
+export {
+  MENU,
+  MENU_USER,
+};

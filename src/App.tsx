@@ -8,6 +8,7 @@ import LoginPage from './page/LoginPage';
 import NotFoundPage from './page/NotFoundPage';
 import ClientsPage from './page/ClientsPage';
 import EmployeesPage from './page/EmployeesPage';
+import EmployeePage from './page/EmployeePage';
 import SalaryPage from './page/SalaryPage';
 import SchedulePage from './page/SchedulePage';
 import StatisticsPage from './page/StatisticsPage';
@@ -22,6 +23,7 @@ const App = () => (
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/clients" component={ClientsPage} />
         <Route exact path="/employees" component={EmployeesPage} />
+        <Route path="/employees/:id" component={EmployeePage} />
         <Route exact path="/salary" component={SalaryPage} />
         <Route exact path="/schedule" component={SchedulePage} />
         <Route exact path="/statistics" component={StatisticsPage} />

@@ -1,5 +1,3 @@
-import Employees from "../components/employees/Employees";
-
 const EMPLOYEES = [
   {
     id: 1,
@@ -10,16 +8,18 @@ const EMPLOYEES = [
     isAdmin: true,
     telegram: '@artemvir',
     viber: '+375297481704',
+    isActive: false,
   },
   {
     id: 2,
     name: 'Alexsandr',
     surname: 'Virshych',
-    avatar: 'https://static.wikia.nocookie.net/avatar/images/f/f4/3%D1%8521_%D0%90%D0%B0%D0%BD%D0%B3.jpg/revision/latest?cb=20110327121409&path-prefix=ru',
+    avatar: 'https://nplus1.ru/images/2016/09/07/1691622a964837af78f19751238ef2fb.jpg',
     phone: '+375295586563',
     isAdmin: true,
     telegram: '@lebron1989',
     viber: '+375295586563',
+    isActive: true,
   },
   {
     id: 3,
@@ -29,16 +29,18 @@ const EMPLOYEES = [
     phone: '+375297489637',
     telegram: '375297489637',
     viber: '+375297489637',
+    isActive: false,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Test',
     surname: 'Testik',
     avatar: 'https://redrumers.files.wordpress.com/2016/01/img5.jpg?w=900',
     phone: '+375297489637',
     telegram: '375297489637',
     viber: '+375297489637',
+    isActive: true,
   }
 ];
 
-export default Employees;
+export default EMPLOYEES;

@@ -9,6 +9,15 @@ const THEME = createMuiTheme({
         background: 'rgb(202 202 202 / 60%)',
       },
     },
+    MuiCardHeader: {
+      title: {
+        fontSize: '16px',
+        fontWeight: 'bold',
+      },
+      subheader: {
+        fontSize: '14px',
+      },
+    },
   },
 });
 

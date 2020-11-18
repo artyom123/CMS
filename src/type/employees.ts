@@ -4,7 +4,8 @@ export type Employee = {
   surname: string;
   avatar: string;
   phone: string;
-  isAdmin: boolean
+  isAdmin?: boolean
   telegram: string;
   viber: string | undefined;
+  isActive: boolean;
 };

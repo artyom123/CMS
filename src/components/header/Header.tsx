@@ -19,6 +19,8 @@ import {
   ExitToApp as ExitToAppIcon,
 } from '@material-ui/icons';
 
+import { MENU_USER } from '../../data/menu';
+
 import './Header.scss';
 
 interface props {
@@ -99,16 +101,15 @@ const Header: React.FC<props> = ({ buttonStore, menuStore }) => {
               open={Boolean(anchorEl)}
               onClose={handleMenuUserClose}
             >
-              <MenuItem onClick={handleMenuUserClose}>
-                <Link href="/setting-user">
-                  Настройки
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleMenuUserClose}>
-                <Link href="/login">
-                  Выход
-                </Link>
-              </MenuItem>
+              {
+                MENU_USER.map(({ id, link, title }) => (
+                <MenuItem onClick={handleMenuUserClose} key={id}>
+                  <Link href={link}>
+                    { title }
+                  </Link>
+                </MenuItem>
+                ))
+              }
             </Menu>
           </Grid>
         </Toolbar>
